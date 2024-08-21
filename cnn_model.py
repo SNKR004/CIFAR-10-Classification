@@ -44,9 +44,11 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # Training
+
 model.fit(x_train, y_train, epochs=10, validation_data=(x_test, y_test))
 
 # Evaluating
+
 test_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)
 print(f'\nTest accuracy: {test_acc}')
 
