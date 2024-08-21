@@ -53,11 +53,14 @@ test_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)
 print(f'\nTest accuracy: {test_acc}')
 
 # Prediction
+
 predictions = model.predict(x_test)
 
 # Validation
+
 predicted_class = tf.argmax(predictions[0]).numpy()
 print(f'Predicted class for the first test image: {predicted_class}')
 
 # Save the model
+
 model.save('cifar10_cnn_model.keras')
