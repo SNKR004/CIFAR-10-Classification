@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 #Split the data into training and testing sets, i.e. 50,000 and 10,000 respectively
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
-# Normalize the images
+# Normalize the images, Scale pixel values from the range [0 to 255] to [0.0 to 1.0]
 x_train, x_test = x_train / 255.0, x_test / 255.0 
 
 # Visualize
