@@ -1,12 +1,18 @@
+#Libraries Used
+
 import tensorflow as tf
 from tensorflow.keras import layers, models
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.utils import to_categorical
 import matplotlib.pyplot as plt
 
-# Load data
+# Data Preperation
+
+#Split the data into training and testing sets, i.e. 50,000 and 10,000 respectively
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
-x_train, x_test = x_train / 255.0, x_test / 255.0  # Normalize the images
+
+# Normalize the images
+x_train, x_test = x_train / 255.0, x_test / 255.0 
 
 # Visualize
 fig, ax = plt.subplots(5, 5)
