@@ -14,7 +14,8 @@ import matplotlib.pyplot as plt
 # Normalize the images, Scale pixel values from the range [0 to 255] to [0.0 to 1.0]
 x_train, x_test = x_train / 255.0, x_test / 255.0 
 
-# Visualize
+# Data Visualization
+
 fig, ax = plt.subplots(5, 5)
 k = 0
 for i in range(5):
