@@ -37,7 +37,8 @@ model = models.Sequential([
     layers.Dense(10, activation='softmax')  # 10 classes for CIFAR-10
 ])
 
-# Compiling
+# Model Compilation
+
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
