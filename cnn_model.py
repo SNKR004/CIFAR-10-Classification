@@ -29,7 +29,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 # Training & Evaluation
-model.fit(x_train, y_train, epochs=10, validation_data=(x_test, y_test))
+model.fit(x_train, y_train, epochs=50, validation_data=(x_test, y_test))
 
 # Prediction
 predictions = model.predict(x_test)
